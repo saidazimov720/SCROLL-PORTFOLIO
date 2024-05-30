@@ -22,3 +22,15 @@ html, body{
     background-size: cover;
     background-position: center;
 }
+
+.slider {
+	transform: rotate(12.5deg);
+	overflow: visible;
+}
+.slider:nth-child(odd) {
+	transform: rotate(192.5deg);
+}
+.slider .slider__wrapper {
+	transition: var(--transition)!important;
+	will-change: transform;
+}
